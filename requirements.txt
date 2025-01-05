@@ -8,4 +8,4 @@ opencv-python-headless==4.7.0.72
 tqdm==4.64.1
 streamlit==1.40.1
 Pillow==9.5.0
-
+setuptools_scm
