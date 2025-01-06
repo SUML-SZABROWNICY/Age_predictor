@@ -8,6 +8,7 @@ Aplikacja posiada interfejs graficzny przedstawiony poniżej:
 ![image](https://github.com/user-attachments/assets/2a495c4d-8610-44c7-b682-2f05370c25e0)
 
 Na podstawie dostarczonego zdjęcia użytkownik otrzymuje rekomendację. Przykład rekomendacji jest przedstawiony poniżej:
+
 ![image](https://github.com/user-attachments/assets/54ae2cbd-879f-49da-a084-422162cf552e)
 
 
