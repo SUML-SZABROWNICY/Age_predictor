@@ -10,7 +10,7 @@ from keras.losses import MeanAbsoluteError
 from keras.models import load_model
 from keras.utils import img_to_array
 
-MODEL_PATH = '..//trained_model_30.h5'
+MODEL_PATH = '.\\trained_model_30.h5'
 model = load_model(MODEL_PATH, custom_objects={"mae": MeanAbsoluteError})
 
 gender_dict = {0: 'Male', 1: 'Female'}
@@ -122,13 +122,12 @@ def process_image_with_model(image):
             result = f"Predicted Gender: {predicted_gender}, Average Age: {average_age} \n"
             season = get_season()
             time_of_day = get_time_of_day()
-            coffee = load_coffee_data('..//Data//coffeeV4.json')
+            coffee = load_coffee_data('.\\Data\\coffeeV4.json')
 
             predicted_gender = predicted_gender.lower()
 
             recommendations = get_coffee_recommendations(average_age, predicted_gender, season=season,
                                                          time_of_day=time_of_day, coffee_data=coffee)
-            print(type(recommendations))
             if 'classic' in recommendations:
                 result += "Classic Recommendations:\n"
                 for coffee in recommendations['classic']:
